@@ -102,4 +102,6 @@ ENV/
 db.sqllite3
 
 README.md
-.*sublime.*
+*sublime*
+
+*migrations*
