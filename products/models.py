@@ -29,7 +29,6 @@ class Product(models.Model):
     )
 
     product_type = models.CharField(max_length=3,
-                                    choices=product_types,
-                                    default=product_types[0][0][0])
+                                    choices=product_types)
 
 # https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-choices

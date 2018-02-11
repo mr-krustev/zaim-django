@@ -99,7 +99,8 @@ ENV/
 
 # mypy
 .mypy_cache/
-db.sqllite3
+
+*sqlite3*
 
 README.md
 *sublime*
