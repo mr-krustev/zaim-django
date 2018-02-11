@@ -19,7 +19,7 @@ class Product(models.Model):
         ('Clothes', (
                 ('T', 'Tops'),
                 ('B', 'Bottoms'),
-                ('L', 'Lingerie'),
+                ('L', 'Lingerie'),	
         )),
         ('Accesories', (
                 ('J', 'Jewelry'),
