@@ -1,0 +1,359 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Mo",
+				"Model_full\tModel (full)"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"cae",
+				"categoryID"
+			],
+			[
+				"passw",
+				"passwordhash"
+			],
+			[
+				"Categor",
+				"CategorySchema"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 236.0,
+		"last_filter": "package inst",
+		"selected_items":
+		[
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package control insta\t",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Install Package Control"
+			],
+			[
+				"package Conrol: Remve Pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"package Conrol: Pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"Snippet: ",
+				"Snippet: If Condition"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Inst\t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Nazdael/Desktop/Development/zaim"
+	],
+	"file_history":
+	[
+		"/C/Users/Nazdael/Desktop/Development/zaim/products/learning_django",
+		"/C/Users/Nazdael/Desktop/Development/zaim/products/models.py",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/Nazdael/Desktop/Development/LearningDjango/LearningDjango/zaim-django-website",
+		"/C/Users/Nazdael/Desktop/Development/LearningDjango/mysite/learning_django",
+		"/D/Games/steamapps/common/Stonehearth/stonehearth.json",
+		"/C/Users/Nazdael/Downloads/homesweethome/homesweethome/entities/containers/barrel/barrel.json",
+		"/C/Users/Nazdael/Downloads/homesweethome/homesweethome/entities/furniture/fireplace_stone_large/fireplace_stone_large.json",
+		"/C/Users/Nazdael/Downloads/homesweethome/homesweethome/data/effects/candelaber_effect/candelaber_effect.json",
+		"/C/Users/Nazdael/Downloads/homesweethome/homesweethome/manifest.json",
+		"/C/Users/Nazdael/Downloads/homesweethome/homesweethome/entities/furniture/fireplace_stone_large/fireplace_base_part1_02.qb",
+		"/D/Games/steamapps/common/Stonehearth/mods/homesweethome.smod",
+		"/D/Games/steamapps/common/Stonehearth/mods/stonehearth.smod",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/config/test.json",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/config/default.json",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/config/dev.json",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/server.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/node_modules/mongoose/lib/connection.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/test/controllers/category_controller_unit_test.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/controllers/user_controller.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/services/categories.service.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/categories.component.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/node_modules/chai/lib/chai.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/routes/expense_routes.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/environments/environment.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/environments/environment.prod.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/test/models/category_model_unit_test.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/routes/user_routes.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/routes/category_routes.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/app.component.html",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/messages/messages.component.html",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/services/messages.service.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/categories.component.html",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/categories.details.component.html",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/categories.details.component.css",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/categories.details.component.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/categories.component.css",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/controllers/category_controller.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/app.routing.module.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/routes/default_routes.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/helpers/route_helpers.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/controllers/expense_controller.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/models/expense_model.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/config/index.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/tests/models/category_model_unit_test.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/tests/controllers/category_controller_unit_test.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/config/authentication.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/models/user_model.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/models/category_model.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/routes/index.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/helpers/messages.component.html",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/messages/messages.component.css",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/helpers/messages.component.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/app.component.css",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/category.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/readme.md",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/config/environment_constants.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/.gitignore",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/package.json",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/app.component.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/app.component.spec.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/app.module.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/messages/messages.component.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/messages/messages.service.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/deleted.component.html",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories/deleted.component.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/PA-FrontEnd/src/app/categories.component.ts",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/api/authentication.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/controllers/category_controller.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/routes/category_routes.js",
+		"/C/Users/Nazdael/Desktop/PersonalAccountant/NodeJS-Backend/server/models/category_model.js",
+		"/C/Users/Nazdael/Desktop/toDoListApi/package.json",
+		"/C/Users/Nazdael/Desktop/toDoListApi/api/models/toDoListModel.js",
+		"/C/Users/Nazdael/Desktop/toDoListApi/api/routes/toDoListRoutes.js",
+		"/C/Users/Nazdael/Desktop/toDoListApi/api/controllers/toDoListController.js",
+		"/C/Users/Nazdael/Desktop/toDoListApi/server.js",
+		"/C/Users/Nazdael/Desktop/Python Project/data.txt",
+		"/C/Users/Nazdael/Desktop/Python Project/test.py",
+		"/C/Users/Nazdael/Desktop/Python Project/test.ts",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/Nazdael/Desktop/Python Project/Learning.sublime-project",
+		"/C/Users/Nazdael/Desktop/Python Project/Learning_Python.sublime-project",
+		"/C/Users/Nazdael/Desktop/test.py"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "zaim_django.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Nazdael\\Desktop\\toDoListApi\\learning node.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 340.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
