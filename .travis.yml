@@ -4,7 +4,9 @@ python:
 # command to install dependencies
 install: pip install -r requirements.txt
 # command to run tests
-script: nosetests
+script: 
+  - python manage.py migrate
+  - python manage.py test
 env:
   - DJANGO_VERSION=1.10.8
   - DJANGO_VERSION=1.11.5
