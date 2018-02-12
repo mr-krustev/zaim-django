@@ -4,10 +4,10 @@ from django.db import models
 class Product(models.Model):
     # these three are a must I think, max_length can be adjusted
     product_id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50,blank=False)
+    name = models.CharField(max_length=50, blank=False)
     description = models.CharField(max_length=500)
     price = models.FloatField(blank=False)
-    
+
     # asked Yonca, she said there can be more than 1 of the same product
     quantity = models.IntegerField(default=0)
 
