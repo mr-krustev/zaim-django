@@ -6,8 +6,8 @@ class Product(models.Model):
     product_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50,blank=False)
     description = models.CharField(max_length=500)
-    price = models.FloatField()
-
+    price = models.FloatField(blank=False)
+    
     # asked Yonca, she said there can be more than 1 of the same product
     quantity = models.IntegerField(default=0)
 

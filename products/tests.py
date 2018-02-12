@@ -16,21 +16,10 @@ class ProductTestCase(TestCase):
 
     def test_products_require_name_value(self):
         """Products that do not have provided name will not be added to db."""
-        try:
+        with self.assertRaises(IntegrityError):
             Product.objects.create(description="I love wearing sweaters.")
-        except IntegrityError as e:
-            pass
-        except Exception as e:
-            raise e
 
     def test_products_require_price_value(self):
         """Products that do not have provided price will not be added to db."""
-        try:
-            Product.objects.create(name="Sweater",
-                               description="I love wearing sweaters.")
-        except IntegrityError as e:
-            pass
-        except Exception as e:
-            raise e
-        
-
+        with self.assertRaises(IntegrityError):
+                Product.objects.create(name="Test")       
