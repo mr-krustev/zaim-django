@@ -8,10 +8,6 @@ class ProductTestCase(TestCase):
     prod_description = "I love hoodies."
     prod_price = 5
 
-    def setUp(self):
-        testProd = Product.objects.create(prod_name, prod_description, prod_price)
-        testProd.save();
-
     def createProduct(self, name=prod_name, description=prod_description,
                       price=prod_price):
         return Product.objects.create(name=name, description=description,
@@ -19,7 +15,8 @@ class ProductTestCase(TestCase):
 
     def test_creating_product_should_work_with_sufficient_data(self):
         try:
-            self.createProduct()
+            product = self.createProduct()
+            product.save()
         except Exception as e:
             self.fail("Product.Create() raised unexpected %s." % e)
 
