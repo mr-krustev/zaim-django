@@ -23,7 +23,7 @@ class ProductTestCase(TestCase):
     def test_creating_products_with_no_name_should_fail(self):
         """Products that do not have provided name will not be added to db."""
         with self.assertRaises(IntegrityError):
-            Product.objects.create(description="I love wearing sweaters.",
+            Product.objects.create(name=None, description="I love wearing sweaters.",
                                    price=5)
 
     def test_creating_products_with_no_price_should_fail(self):
