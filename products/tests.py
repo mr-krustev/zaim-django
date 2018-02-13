@@ -20,7 +20,7 @@ class ProductTestCase(TestCase):
         except Exception as e:
             self.fail("Product.Create() raised unexpected %s." % e)
 
-    def test_creating_products_with_no_name_should_fail(self):
+    def test_creating_products_with_null_name_should_fail(self):
         """Products that do not have provided name will not be added to db."""
         with self.assertRaises(IntegrityError):
             Product.objects.create(name=None, description="I love wearing sweaters.",
