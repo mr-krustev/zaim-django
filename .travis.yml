@@ -7,4 +7,6 @@ install:
   - pip install django -q
 # command to run tests
 script: 
- - pytest
+  - python ./manage.py makemigrations
+  - python ./manage.py migrate
+  - coverage run --source=. ./manage.py test
