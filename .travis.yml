@@ -8,4 +8,4 @@ install:
 # command to run tests
 script: 
  - python ./manage.py migrate
- - coverage run --source='.' ./manage.py test
+ - python ./manage.py runserver
