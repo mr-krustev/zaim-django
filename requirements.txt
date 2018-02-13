@@ -2,4 +2,5 @@ Django
 pytz==2018.3
 coverage
 six
+nose
 django-nose
