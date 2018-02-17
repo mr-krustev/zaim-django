@@ -1,15 +1,24 @@
 language: python
 python:
   - "3.6"
+
 # command to install dependencies
-install: 
+install:
   - pip install -r requirements.txt
   - pip install django -q
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE zaim_test;'
+
 # command to run tests
-script: 
+script:
   - python ./manage.py makemigrations
   - python ./manage.py migrate
   - coverage run --source=. ./manage.py test
 
 notifications:
     slack: zaim-django:NMIAu6SyrmSYlTuAGSAnQPxF
+
