@@ -68,7 +68,12 @@ class ProductTestCase(TestCase): # pragma: no cover
         self.assertEqual(result.description, self.prod_description)
         self.assertEqual(result.price, self.prod_price)
 
-    def test_created_products_should_have_default_quantity_of_zero(self):
+    def test_created_product_should_have_default_quantity_of_zero(self):
         """Products that do not have provided quantity will default to 0."""
         hoodie = self.createProduct()
         self.assertEqual(hoodie.quantity, 0)
+
+    def test_created_product_get_absolute_url_should_return_correct_url(self):
+        p = self.createProduct()
+        absolute_url = p.get_absolute_url()
+        self.assertEqual(absolute_url, '/products/' + str(p.product_id) + '/')
