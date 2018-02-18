@@ -110,3 +110,5 @@ README.md
 
 .idea/
 
+# vim sw files
+*.sw*
