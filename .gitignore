@@ -100,10 +100,15 @@ ENV/
 # mypy
 .mypy_cache/
 
-*README*
+*sqlite3*
+
+README.md
 *sublime*
-*mysql*
-*sqlite*
+
+*migrations*
+*mysql_db*
 
 .idea/
 
+# vim sw files
+*.sw*
