@@ -8,7 +8,7 @@ class ProductsListView(generic.ListView):
     context_object_name = 'products_list'
     template_name = 'products/products_list_view.html'
 
-    def get_queryset(self):
+    def get_queryset(self): # pragma: no cover
         return Product.objects.all()
 
 

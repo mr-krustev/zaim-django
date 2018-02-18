@@ -4,10 +4,8 @@ from django.core.exceptions import ValidationError
 
 from products.models import Product
 
-from unittest import skip
 
-
-class ProductTestCase(TestCase):
+class ProductTestCase(TestCase): # pragma: no cover
     prod_name = "Hoodie"
     prod_description = "I love hoodies."
     prod_price = 5
