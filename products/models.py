@@ -32,12 +32,12 @@ class Product(models.Model):
     product_type = models.CharField(max_length=3,
                                     choices=product_types)
 
-    def _is_valid_p_type(self, pair):
+    def _is_valid_prod_type(self, pair):
         """Recursively check if product_type is a valid key in product_types."""
         has_found = False
         for key, value in pair:
             if isinstance(value, tuple):
-                has_found = self._is_valid_p_type(value)
+                has_found = self._is_valid_prod_type(value)
             else:
                 has_found = key == self.product_type
 
@@ -46,7 +46,7 @@ class Product(models.Model):
         return has_found
 
     def save(self, *args, **kwargs):
-        if self.product_type != '' and not self._is_valid_p_type(self.product_types):
+        if self.product_type and not self._is_valid_prod_type(self.product_types):
             raise ValidationError('Unknown product type selected.')
         super(Product, self).save(*args, **kwargs)
 
