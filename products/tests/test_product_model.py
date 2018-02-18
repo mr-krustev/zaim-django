@@ -1,19 +1,24 @@
 from django.test import TestCase
 from django.db import IntegrityError
+from django.core.exceptions import ValidationError
 
 from products.models import Product
+
+from unittest import skip
+
 
 class ProductTestCase(TestCase):
     prod_name = "Hoodie"
     prod_description = "I love hoodies."
     prod_price = 5
 
-    def createProduct(self, name=prod_name, description=prod_description,
+    @staticmethod
+    def createProduct(name=prod_name, description=prod_description,
                       price=prod_price):
         return Product.objects.create(name=name, description=description,
                                       price=price)
 
-    def test_creating_product_should_work_with_sufficient_data(self):
+    def test_creating_product_with_sufficient_data_should_succeed(self):
         try:
             product = self.createProduct()
             product.save()
@@ -26,18 +31,38 @@ class ProductTestCase(TestCase):
             Product.objects.create(name=None, description="I love wearing sweaters.",
                                    price=5)
 
+    def test_creating_products_with_empty_name_should_fail(self):
+        with self.assertRaises(IntegrityError):
+            Product.objects.create(price=5)
+
     def test_creating_products_with_no_price_should_fail(self):
         """Products that do not have provided price will not be added to db."""
         with self.assertRaises(IntegrityError):
-                Product.objects.create(name="Test")
+            Product.objects.create(name="Test")
 
-    def test_creating_products_with_empty_name_should_fail(self):
-        # TODO: Not implemented
-        pass
+    def test_creating_products_with_empty_description_should_work(self):
+        try:
+            product = Product.objects.create(name="One", price=1)
+            product.save()
+        except Exception as e:
+            self.fail("Product.Create() raised unexpected %s." % e)
+        self.assertEqual(product.description, "")
 
-    def test_creating_products_with_empty_descrption_should_work(self):
-        # TODO: Not implemented
-        pass
+    def test_creating_products_with_correct_product_type_should_work(self):
+        try:
+            Product.objects.create(name=self.prod_name,description=self.prod_description,price=self.prod_price, product_type="T")
+        except Exception as e:
+            self.fail("Product.Create() raised unexpected %s." % e)
+
+    def test_creating_products_with_wrong_product_type_should_fail(self):
+        with self.assertRaises(ValidationError):
+            Product.objects.create(name=self.prod_name, description=self.prod_description, price=self.prod_price,
+                                             product_type="Q")
+
+    def test_creating_products_with_long_product_type_should_fail(self):
+        with self.assertRaises(ValidationError):
+            Product.objects.create(name=self.prod_name, description=self.prod_description, price=self.prod_price,
+                                             product_type='ClothesJewels')
 
     def test_created_product_should_have_provided_values(self):
         result = self.createProduct()
