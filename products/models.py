@@ -34,7 +34,7 @@ class Product(models.Model):
                                     choices=product_types)
 
     def get_absolute_url(self):
-        return reverse('detail', args=[self.product_id])
+        return reverse('products:detail', args=[self.product_id])
 
     def _is_valid_prod_type(self, pair):
         """Recursively check if product_type is a valid key in product_types."""
