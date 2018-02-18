@@ -1,10 +1,11 @@
 from django.db import models
+from django.core.exceptions import ValidationError
 
 
 class Product(models.Model):
     # these three are a must I think, max_length can be adjusted
     product_id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, default=None)
     description = models.TextField(max_length=500)
     price = models.FloatField()
 
@@ -30,5 +31,10 @@ class Product(models.Model):
 
     product_type = models.CharField(max_length=3,
                                     choices=product_types)
+
+    def save(self, *args, **kwargs):
+        if self.product_type != "" and self.product_type not in self.product_types:
+            raise ValidationError('Unknown product type selected.')
+        super(Product, self).save(*args, **kwargs)
 
 # https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-choices
