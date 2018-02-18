@@ -36,7 +36,11 @@ class ProductTestCase(TestCase): # pragma: no cover
     def test_creating_products_with_no_price_should_fail(self):
         """Products that do not have provided price will not be added to db."""
         with self.assertRaises(IntegrityError):
-            Product.objects.create(name="Test")
+            Product.objects.create(name=self.prod_name)
+
+    def test_creating_product_with_invalid_price_should_fail(self):
+        with self.assertRaises(ValueError):
+            Product.objects.create(name=self.prod_name, price="fail")
 
     def test_creating_products_with_empty_description_should_work(self):
         try:
@@ -60,7 +64,7 @@ class ProductTestCase(TestCase): # pragma: no cover
     def test_creating_products_with_long_product_type_should_fail(self):
         with self.assertRaises(ValidationError):
             Product.objects.create(name=self.prod_name, description=self.prod_description, price=self.prod_price,
-                                             product_type='ClothesJewels')
+                                   product_type='ClothesJewels')
 
     def test_created_product_should_have_provided_values(self):
         result = self.createProduct()
