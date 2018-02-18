@@ -1,15 +1,10 @@
 {% block content %}
 	<h1>Products</h1>
-
-	{% for product in products_list %}
-
 	<ul>
-
+	{% for product in products_list %}
 		<li>
 			<a href="/products/{{ product.product_id }}">{{ product.name }}</a>
 		</li>
 	{% endfor %}
-
 	</ul>
-
 {% endblock %}
