@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.core.exceptions import ValidationError
 
 
@@ -31,6 +32,9 @@ class Product(models.Model):
 
     product_type = models.CharField(max_length=3,
                                     choices=product_types)
+
+    def get_absolute_url(self):
+        return reverse('detail', args=[self.product_id])
 
     def _is_valid_prod_type(self, pair):
         """Recursively check if product_type is a valid key in product_types."""
