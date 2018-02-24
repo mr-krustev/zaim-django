@@ -1,9 +1,9 @@
-{% load staticfiles %}
 <!DOCTYPE html>
 <html>
     {# Make modifiable head elements #}
     <head>
         <title>{% block title %}Home {% endblock title %} | Zaim</title>
+        {% load static %}
         {% block head_meta %}
             {% block head_meta_charset %}
                 <meta http-equiv="Content-Type"
@@ -66,12 +66,11 @@
         <div class="clearfix"></div>
         <div class="footer">
             <div class="container">
-                <p>Copyright Zaim</p>
+                <p class="text-center">Copyright Zaim</p>
             </div>
         </div>
     </body>
     {# Set of blocks that can be used to display JavaScript files #}
-    {% load static %}
     {% block footer_javascript %}
         {% block footer_javascript_site %}
             <script src="{% static 'js/jquery-min.js' %}"></script>
